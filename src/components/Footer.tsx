@@ -41,13 +41,28 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-syncopate mb-6">FOLLOW US</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="https://www.facebook.com/eddiiecole/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Facebook size={24} />
               </a>
-              <a href="https://www.instagram.com/eddiecole.studios" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="https://www.instagram.com/eddiecole.studios" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <Instagram size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="https://x.com/EDDiiECOLE" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 <X size={24} />
               </a>
             </div>

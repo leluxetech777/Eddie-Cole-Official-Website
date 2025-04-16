@@ -2,20 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide custom cursor by default (mobile/tablet) */
 .custom-cursor {
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  z-index: 9999;
-  transition: transform 0.2s ease;
+  display: none;
 }
 
-.custom-cursor.hover {
-  transform: scale(2);
+/* Only show custom cursor on larger screens */
+@media (min-width: 1024px) {
+  .custom-cursor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 9999;
+    transition: transform 0.2s ease;
+  }
+
+  .custom-cursor.hover {
+    transform: scale(2);
+  }
 }
 
 .magnetic-wrap {

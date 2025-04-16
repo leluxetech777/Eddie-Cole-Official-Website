@@ -359,102 +359,110 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50"
             onClick={() => setSelectedProject(null)}
           >
-            <motion.div
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-              className="bg-[#1a1a1a] max-w-6xl w-full rounded-lg overflow-hidden relative"
-            >
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 z-50 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
-              >
-                <X size={24} />
-              </button>
+            <div className="h-full overflow-y-auto">
+              <div className="min-h-full p-4 md:p-8 flex items-center justify-center">
+                <motion.div
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.95, opacity: 0 }}
+                  onClick={(e) => e.stopPropagation()}
+                  className="bg-[#1a1a1a] w-[90%] md:w-[60%] rounded-lg overflow-hidden relative"
+                >
+                  <button
+                    onClick={() => setSelectedProject(null)}
+                    className="absolute top-4 right-4 z-50 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
+                  >
+                    <X size={24} />
+                  </button>
 
-              <div className="relative aspect-video group">
-                <motion.img
-                  key={currentImageIndex}
-                  src={selectedProject.gallery[currentImageIndex]}
-                  alt={selectedProject.title}
-                  className="w-full h-full object-cover"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                />
-                
-                {selectedProject.gallery.length > 1 && (
-                  <>
-                    <button
-                      onClick={handlePrevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
-                    >
-                      <motion.div
-                        whileHover={{ x: -3 }}
-                        className="flex items-center justify-center"
-                      >
-                        ←
-                      </motion.div>
-                    </button>
-                    <button
-                      onClick={handleNextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
-                    >
-                      <motion.div
-                        whileHover={{ x: 3 }}
-                        className="flex items-center justify-center"
-                      >
-                        →
-                      </motion.div>
-                    </button>
-                  </>
-                )}
+                  <div className="w-full">
+                    <div className="relative group">
+                      <div className="w-full h-[50vh] md:h-[60vh] flex items-center justify-center bg-black">
+                        <motion.img
+                          key={currentImageIndex}
+                          src={selectedProject.gallery[currentImageIndex]}
+                          alt={selectedProject.title}
+                          className="h-full max-w-full object-contain"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ duration: 0.3 }}
+                        />
+                      </div>
+                      
+                      {selectedProject.gallery.length > 1 && (
+                        <>
+                          <button
+                            onClick={handlePrevImage}
+                            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
+                          >
+                            <motion.div
+                              whileHover={{ x: -3 }}
+                              className="flex items-center justify-center"
+                            >
+                              ←
+                            </motion.div>
+                          </button>
+                          <button
+                            onClick={handleNextImage}
+                            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70"
+                          >
+                            <motion.div
+                              whileHover={{ x: 3 }}
+                              className="flex items-center justify-center"
+                            >
+                              →
+                            </motion.div>
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="p-8 bg-[#1a1a1a]">
+                    <h2 className="text-3xl font-bold mb-6 font-syncopate gradient-text">
+                      {selectedProject.title}
+                    </h2>
+
+                    <div className="grid md:grid-cols-3 gap-8 mb-8">
+                      <div>
+                        <h3 className="text-sm font-syncopate text-gray-400 mb-2">CLIENT</h3>
+                        <p className="font-bodoni">{selectedProject.client}</p>
+                      </div>
+                      <div>
+                        <h3 className="text-sm font-syncopate text-gray-400 mb-2">ROLE</h3>
+                        <p className="font-bodoni">{selectedProject.role}</p>
+                      </div>
+                      <div>
+                        <h3 className="text-sm font-syncopate text-gray-400 mb-2">YEAR</h3>
+                        <p className="font-bodoni">{selectedProject.year}</p>
+                      </div>
+                    </div>
+
+                    <div className="mb-8">
+                      <h3 className="text-sm font-syncopate text-gray-400 mb-2">ABOUT</h3>
+                      <p className="font-bodoni text-gray-300">{selectedProject.fullDescription}</p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-sm font-syncopate text-gray-400 mb-2">TECHNOLOGIES</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {selectedProject.technologies.map((tech, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 bg-white/5 rounded-full text-sm font-bodoni"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-
-              <div className="p-8">
-                <h2 className="text-3xl font-bold mb-6 font-syncopate gradient-text">
-                  {selectedProject.title}
-                </h2>
-
-                <div className="grid md:grid-cols-3 gap-8 mb-8">
-                  <div>
-                    <h3 className="text-sm font-syncopate text-gray-400 mb-2">CLIENT</h3>
-                    <p className="font-bodoni">{selectedProject.client}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-syncopate text-gray-400 mb-2">ROLE</h3>
-                    <p className="font-bodoni">{selectedProject.role}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-syncopate text-gray-400 mb-2">YEAR</h3>
-                    <p className="font-bodoni">{selectedProject.year}</p>
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-sm font-syncopate text-gray-400 mb-2">ABOUT</h3>
-                  <p className="font-bodoni text-gray-300">{selectedProject.fullDescription}</p>
-                </div>
-
-                <div>
-                  <h3 className="text-sm font-syncopate text-gray-400 mb-2">TECHNOLOGIES</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedProject.technologies.map((tech, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-white/5 rounded-full text-sm font-bodoni"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
