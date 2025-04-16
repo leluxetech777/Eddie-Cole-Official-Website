@@ -1,10 +1,49 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { scrollYProgress } = useScroll();
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const result = await emailjs.sendForm(
+        'eddiecoleglobal',
+        'template_eddiecoleglobal',
+        formRef.current,
+        'gs0FSrBGsgHbnc4z1'
+      );
+
+      if (result.text === 'OK') {
+        setSubmitStatus({
+          type: 'success',
+          message: 'Message sent successfully! We will get back to you soon.'
+        });
+        formRef.current.reset();
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Failed to send message. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="pt-24 pb-32 relative">
@@ -40,11 +79,13 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <form className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-syncopate mb-2">NAME</label>
                   <input
                     type="text"
+                    name="user_name"
+                    required
                     className="w-full bg-white/5 border-b border-white/30 py-3 px-4 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
@@ -52,6 +93,7 @@ const Contact = () => {
                   <label className="block text-sm font-syncopate mb-2">PHONE NUMBER</label>
                   <input
                     type="tel"
+                    name="user_phone"
                     className="w-full bg-white/5 border-b border-white/30 py-3 px-4 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
@@ -59,22 +101,39 @@ const Contact = () => {
                   <label className="block text-sm font-syncopate mb-2">EMAIL</label>
                   <input
                     type="email"
+                    name="user_email"
+                    required
                     className="w-full bg-white/5 border-b border-white/30 py-3 px-4 focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-syncopate mb-2">MESSAGE</label>
                   <textarea
+                    name="message"
+                    required
                     rows={6}
                     className="w-full bg-white/5 border-b border-white/30 py-3 px-4 focus:outline-none focus:border-white transition-colors resize-none"
                   ></textarea>
                 </div>
+
+                {submitStatus.type && (
+                  <div className={`p-4 rounded-lg ${
+                    submitStatus.type === 'success' ? 'bg-green-500/10 text-green-400' : 'bg-red-500/10 text-red-400'
+                  }`}>
+                    {submitStatus.message}
+                  </div>
+                )}
+
                 <motion.button 
-                  className="px-8 py-3 bg-white text-black hover:bg-gray-200 transition-colors font-syncopate"
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={`px-8 py-3 bg-white text-black hover:bg-gray-200 transition-colors font-syncopate disabled:opacity-50 disabled:cursor-not-allowed ${
+                    isSubmitting ? 'animate-pulse' : ''
+                  }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  SEND MESSAGE
+                  {isSubmitting ? 'SENDING...' : 'SEND MESSAGE'}
                 </motion.button>
               </form>
             </motion.div>
