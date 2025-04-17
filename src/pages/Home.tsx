@@ -114,7 +114,7 @@ const Home = () => {
     <div ref={containerRef} className="relative">
       <div className="noise" />
       
-      {/* Hero Section */}
+      {/* Home Page Cover Section */}
       <div className="relative h-screen overflow-hidden">
         <motion.div 
           className="absolute inset-0"
@@ -125,7 +125,7 @@ const Home = () => {
         >
           <img 
             src="/EddieColeHomePageCover.jpeg"
-            alt="Abstract Fashion"
+            alt="Eddie Cole Header"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
