@@ -81,7 +81,7 @@ const About = () => {
             className="relative aspect-[3/4] rainbow-border"
           >
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
+              src="/public/EddieColeInSuit.jpeg"
               alt="Eddie Cole"
               className="w-full h-full object-cover"
             />
