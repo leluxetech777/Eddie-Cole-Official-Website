@@ -55,15 +55,15 @@ const Home = () => {
       title: "NIKE CAMPAIGN",
       description: "Revolutionary campaign bridging athletic performance and high fashion.",
       fullDescription: "The Nike Campaign represents a revolutionary approach to sports fashion, merging elite athletic performance with high-end fashion sensibilities. This groundbreaking project challenged traditional boundaries between sportswear and luxury fashion, creating a new category of performance-focused yet stylistically sophisticated apparel. The campaign featured innovative photography techniques and cutting-edge digital elements to showcase the fusion of technology and style.",
-      image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80",
+      image: "/EddieColeNikeCampaign.jpeg",
       year: "2023",
       client: "Nike",
       role: "Campaign Director & Photographer",
       technologies: ["Motion Capture", "AR Integration", "Performance Fabrics", "Digital Marketing"],
       gallery: [
-        "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80"
+        "/EddieColeNikeCampaign.jpeg",
+        "/EddieColeNikeCampaign2.jpeg",
+        "/EddieColeNikeCampaign3.jpeg"
       ]
     },
     {
