@@ -62,8 +62,8 @@ const About = () => {
               His work is characterized by a bold, avant-garde approach that seamlessly blends different 
               mediums and styles. The resilience learned from his early life experiences manifests in his 
               fearless creative decisions, pushing boundaries while maintaining an authentic connection to 
-              his roots. This unique combination of cultural depth and innovative vision has earned him 
-              recognition alongside industry icons.
+              who he is. Eddie's unique combination of street and high fashion and innovative vision has earned him 
+              recognition alongside industry icons, and in his words, he's "...Just getting started".
             </p>
             <p className="text-lg mb-6 font-bodoni">
               Today, Eddie's story serves as an inspiration for aspiring creatives worldwide. His journey 

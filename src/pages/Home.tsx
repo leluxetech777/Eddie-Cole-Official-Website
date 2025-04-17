@@ -124,7 +124,7 @@ const Home = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80"
+            src="/EddieColeNikeCampaign.jpeg"
             alt="Abstract Fashion"
             className="w-full h-full object-cover"
           />
