@@ -37,10 +37,10 @@ const Home = () => {
 
   const featuredProjects: FeaturedProject[] = [
     {
-      title: "VOGUE COLLECTION",
-      description: "A groundbreaking fashion collection that redefines luxury streetwear.",
+      title: "The Cole Method",
+      description: "A groundbreaking fashion style that redefines luxury streetwear, by Yours Truly.",
       fullDescription: "The Vogue Collection represents a paradigm shift in luxury fashion, seamlessly blending haute couture with street sensibilities. Each piece is meticulously crafted to challenge conventional fashion boundaries while maintaining the highest standards of craftsmanship. The collection features sustainable materials, innovative textile technologies, and bold silhouettes that speak to both traditional luxury consumers and contemporary fashion enthusiasts.",
-      image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80",
+      image: "/EddieCole.jpg",
       year: "2024",
       client: "Vogue Magazine",
       role: "Creative Director & Lead Designer",
