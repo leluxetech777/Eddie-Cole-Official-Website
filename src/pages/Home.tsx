@@ -67,7 +67,7 @@ const Home = () => {
       ]
     },
     {
-      title: "PARIS FASHION WEEK",
+      title: "COLE & FRIENDS",
       description: "Showcasing avant-garde designs at the pinnacle of fashion.",
       fullDescription: "Our Paris Fashion Week presentation marked a defining moment in contemporary fashion, showcasing a collection that pushed the boundaries of conventional design while paying homage to classical haute couture. The show featured an innovative runway concept that integrated interactive digital elements with physical fashion pieces, creating an immersive experience that captivated both in-person and virtual audiences worldwide.",
       image: "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&q=80",
