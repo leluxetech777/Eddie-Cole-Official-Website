@@ -233,7 +233,7 @@ const Home = () => {
               {
                 title: "CREATIVE DIRECTION",
                 description: "Crafting visual narratives that transcend conventional boundaries. From concept to execution, we shape brand identities that leave lasting impressions.",
-                image: "/EddieColeCreativeDirection"
+                image: "/EddieColeCreativeDirection.jpg"
               },
               {
                 title: "PHOTOGRAPHY",
@@ -243,7 +243,7 @@ const Home = () => {
               {
                 title: "FASHION DESIGN",
                 description: "Where innovation meets elegance. Our designs push boundaries while maintaining timeless appeal, setting trends rather than following them.",
-                image: "/EddieColeFashionDesign"
+                image: "/EddieColeFashionDesign.jpg"
               }
             ].map((service, index) => (
               <motion.div
