@@ -61,7 +61,7 @@ const Home = () => {
       role: "Campaign Director & Photographer",
       technologies: ["Motion Capture", "AR Integration", "Performance Fabrics", "Digital Marketing"],
       gallery: [
-        "/EddieColeNikeCampaign.jpeg",
+        "/EddieColeNikeCampaignCover.jpg",
         "/EddieColeNikeCampaign2.jpeg",
         "/EddieColeNikeCampaign3.jpeg"
       ]
