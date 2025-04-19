@@ -38,7 +38,7 @@ const Home = () => {
   const featuredProjects: FeaturedProject[] = [
     {
       title: "The Cole Method",
-      description: "A groundbreaking fashion style that redefines luxury streetwear, by Yours Truly.",
+      description: "A groundbreaking fashion style that redefines luxury streetwear, Styled by Yours Truly.",
       fullDescription: "The Vogue Collection represents a paradigm shift in luxury fashion, seamlessly blending haute couture with street sensibilities. Each piece is meticulously crafted to challenge conventional fashion boundaries while maintaining the highest standards of craftsmanship. The collection features sustainable materials, innovative textile technologies, and bold silhouettes that speak to both traditional luxury consumers and contemporary fashion enthusiasts.",
       image: "/EddieCole.jpg",
       year: "2024",
@@ -46,7 +46,7 @@ const Home = () => {
       role: "Creative Director & Lead Designer",
       technologies: ["Sustainable Fabrics", "Digital Printing", "3D Modeling", "Smart Textiles"],
       gallery: [
-        "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80",
+        "/EddieColeTheColeMethod.jpg",
         "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80"
       ]
@@ -233,17 +233,17 @@ const Home = () => {
               {
                 title: "CREATIVE DIRECTION",
                 description: "Crafting visual narratives that transcend conventional boundaries. From concept to execution, we shape brand identities that leave lasting impressions.",
-                image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
+                image: "/EddieColeCreativeDirection"
               },
               {
                 title: "PHOTOGRAPHY",
                 description: "Capturing moments that tell stories. Our lens focuses on the extraordinary in every frame, creating visual poetry that speaks volumes.",
-                image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80"
+                image: "/EddieColePhotography.jpg"
               },
               {
                 title: "FASHION DESIGN",
                 description: "Where innovation meets elegance. Our designs push boundaries while maintaining timeless appeal, setting trends rather than following them.",
-                image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80"
+                image: "/EddieColeFashionDesign"
               }
             ].map((service, index) => (
               <motion.div
