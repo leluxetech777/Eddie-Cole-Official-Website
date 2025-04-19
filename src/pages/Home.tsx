@@ -38,7 +38,7 @@ const Home = () => {
   const featuredProjects: FeaturedProject[] = [
     {
       title: "The Cole Method",
-      description: "A groundbreaking fashion style that redefines luxury streetwear, Styled by Yours Truly.",
+      description: "A fashion style that redefined luxury streetwear, styled by -Yours Truly.",
       fullDescription: "The Vogue Collection represents a paradigm shift in luxury fashion, seamlessly blending haute couture with street sensibilities. Each piece is meticulously crafted to challenge conventional fashion boundaries while maintaining the highest standards of craftsmanship. The collection features sustainable materials, innovative textile technologies, and bold silhouettes that speak to both traditional luxury consumers and contemporary fashion enthusiasts.",
       image: "/EddieCole.jpg",
       year: "2024",
@@ -55,7 +55,7 @@ const Home = () => {
       title: "NIKE CAMPAIGN",
       description: "Revolutionary campaign bridging athletic performance and high fashion.",
       fullDescription: "The Nike Campaign represents a revolutionary approach to sports fashion, merging elite athletic performance with high-end fashion sensibilities. This groundbreaking project challenged traditional boundaries between sportswear and luxury fashion, creating a new category of performance-focused yet stylistically sophisticated apparel. The campaign featured innovative photography techniques and cutting-edge digital elements to showcase the fusion of technology and style.",
-      image: "/EddieColeNikeCampaign.jpeg",
+      image: "/EddieColeNikeCampaignCover.jpg",
       year: "2023",
       client: "Nike",
       role: "Campaign Director & Photographer",
