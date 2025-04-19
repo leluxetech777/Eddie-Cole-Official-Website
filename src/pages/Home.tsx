@@ -124,7 +124,7 @@ const Home = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <img 
-            src="/EddieCole.jpg"
+            src="/EddieColeHomePageCover.jpeg"
             alt="Eddie Cole Header"
             className="w-full h-full object-cover"
           />
