@@ -12,28 +12,28 @@ const About = () => {
   const isInView = useInView(carouselRef);
 
   const carouselData = [
-    { year: "2015", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80" },
-    { year: "2015", image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80" },
-    { year: "2016", image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80" },
-    { year: "2016", image: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80" },
-    { year: "2017", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80" },
-    { year: "2017", image: "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&q=80" },
-    { year: "2018", image: "https://images.unsplash.com/photo-1549187774-b4e9b0445b41?auto=format&fit=crop&q=80" },
-    { year: "2018", image: "https://images.unsplash.com/photo-1549187774-b4e9b0445b41?auto=format&fit=crop&q=80" },
-    { year: "2019", image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80" },
-    { year: "2019", image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80" },
-    { year: "2020", image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80" },
-    { year: "2020", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80" },
-    { year: "2021", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80" },
-    { year: "2021", image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80" },
-    { year: "2022", image: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80" },
-    { year: "2022", image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80" },
-    { year: "2023", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80" },
-    { year: "2023", image: "https://images.unsplash.com/photo-1506634572416-48cdfe530110?auto=format&fit=crop&q=80" },
-    { year: "2024", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80" },
-    { year: "2024", image: "https://images.unsplash.com/photo-1504703395950-b89145a5425b?auto=format&fit=crop&q=80" },
-    { year: "2025", image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80" },
-    { year: "2025", image: "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&fit=crop&q=80" }
+    { year: "2015", image: "/EddieCole2015a.jpg" },
+    { year: "2015", image: "/EddieCole2015b.jpg" },
+    { year: "2016", image: "/EddieCole2016a.jpg" },
+    { year: "2016", image: "/EddieCole2016b.jpg" },
+    { year: "2017", image: "/EddieCole2017a.jpg" },
+    { year: "2017", image: "/EddieCole2017b.jpg" },
+    { year: "2018", image: "/EddieCole2018a.jpg" },
+    { year: "2018", image: "/EddieCole2018b.jpg" },
+    { year: "2019", image: "/EddieCole2019a.jpg" },
+    { year: "2019", image: "/EddieCole2019b.jpg" },
+    { year: "2020", image: "/EddieCole2020a.jpg" },
+    { year: "2020", image: "/EddieCole2020b.jpg" },
+    { year: "2021", image: "/EddieCole2021a.jpg" },
+    { year: "2021", image: "/EddieCole2021b.jpg" },
+    { year: "2022", image: "/EddieCole2022a.jpg" },
+    { year: "2022", image: "/EddieCole2022b.jpg" },
+    { year: "2023", image: "/EddieCole2023a.jpg" },
+    { year: "2023", image: "/EddieCole2023b.jpg" },
+    { year: "2024", image: "/EddieCole2024a.jpg" },
+    { year: "2024", image: "/EddieCole2024b.jpg" },
+    { year: "2025", image: "/EddieCole2025a.jpg" },
+    { year: "2025", image: "/EddieCole2025b.jpg" }
   ];
 
   return (
@@ -83,7 +83,7 @@ const About = () => {
             className="relative aspect-[3/4] rainbow-border"
           >
             <img
-              src="/EddieColeInSuit.jpeg"
+              src="/EddieColeBioPic.jpeg"
               alt="Eddie Cole"
               className="w-full h-full object-cover"
             />
