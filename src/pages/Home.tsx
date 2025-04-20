@@ -188,7 +188,7 @@ const Home = () => {
               }}
             >
               <motion.img
-                src="/EddieCole2025a"
+                src="/TextMaskCover.avif"
                 alt="Creative Showcase"
                 className="w-full h-full object-cover"
                 initial={{ scale: 1.2 }}
