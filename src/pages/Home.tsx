@@ -40,7 +40,7 @@ const Home = () => {
       title: "The Cole Method",
       description: "A fashion style that redefined luxury streetwear, styled by -Yours Truly.",
       fullDescription: "The Vogue Collection represents a paradigm shift in luxury fashion, seamlessly blending haute couture with street sensibilities. Each piece is meticulously crafted to challenge conventional fashion boundaries while maintaining the highest standards of craftsmanship. The collection features sustainable materials, innovative textile technologies, and bold silhouettes that speak to both traditional luxury consumers and contemporary fashion enthusiasts.",
-      image: "/EddieCole.jpg",
+      image: "/TheColeMethodCover.jpg",
       year: "2024",
       client: "Vogue Magazine",
       role: "Creative Director & Lead Designer",
@@ -55,7 +55,7 @@ const Home = () => {
       title: "NIKE CAMPAIGN",
       description: "Revolutionary campaign bridging athletic performance and high fashion.",
       fullDescription: "The Nike Campaign represents a revolutionary approach to sports fashion, merging elite athletic performance with high-end fashion sensibilities. This groundbreaking project challenged traditional boundaries between sportswear and luxury fashion, creating a new category of performance-focused yet stylistically sophisticated apparel. The campaign featured innovative photography techniques and cutting-edge digital elements to showcase the fusion of technology and style.",
-      image: "/EddieColeNikeCampaignCover.jpg",
+      image: "/NikeCampaignCover.jpg",
       year: "2023",
       client: "Nike",
       role: "Campaign Director & Photographer",
@@ -70,7 +70,7 @@ const Home = () => {
       title: "COLE & FRIENDS",
       description: "Showcasing avant-garde designs at the pinnacle of fashion.",
       fullDescription: "Our Paris Fashion Week presentation marked a defining moment in contemporary fashion, showcasing a collection that pushed the boundaries of conventional design while paying homage to classical haute couture. The show featured an innovative runway concept that integrated interactive digital elements with physical fashion pieces, creating an immersive experience that captivated both in-person and virtual audiences worldwide.",
-      image: "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&q=80",
+      image: "/ColeAndFriendsCover.jpg",
       year: "2023",
       client: "Paris Fashion Week",
       role: "Show Director & Lead Designer",
@@ -233,17 +233,17 @@ const Home = () => {
               {
                 title: "CREATIVE DIRECTION",
                 description: "Crafting visual narratives that transcend conventional boundaries. From concept to execution, we shape brand identities that leave lasting impressions.",
-                image: "/EddieColeCreativeDirection.jpg"
+                image: "/EddieColeServices1.jpg"
               },
               {
                 title: "PHOTOGRAPHY",
                 description: "Capturing moments that tell stories. Our lens focuses on the extraordinary in every frame, creating visual poetry that speaks volumes.",
-                image: "/EddieColePhotography.jpg"
+                image: "/EddieColeServices2.jpg"
               },
               {
                 title: "FASHION DESIGN",
                 description: "Where innovation meets elegance. Our designs push boundaries while maintaining timeless appeal, setting trends rather than following them.",
-                image: "/EddieColeFashionDesign.jpg"
+                image: "/EddieColeServices3.jpg"
               }
             ].map((service, index) => (
               <motion.div
