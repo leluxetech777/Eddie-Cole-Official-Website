@@ -193,7 +193,7 @@ const Home = () => {
                 className="w-full h-full object-cover"
                 initial={{ scale: 2.5 }}
                 whileInView={{ scale: 1 }}
-                transition={{ duration: 2.9 }}
+                transition={{ duration: 3.5 }}
               />
             </div>
           </div>
