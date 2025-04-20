@@ -55,7 +55,7 @@ const Home = () => {
       title: "NIKE CAMPAIGN",
       description: "Revolutionary campaign bridging athletic performance and high fashion.",
       fullDescription: "The Nike Campaign represents a revolutionary approach to sports fashion, merging elite athletic performance with high-end fashion sensibilities. This groundbreaking project challenged traditional boundaries between sportswear and luxury fashion, creating a new category of performance-focused yet stylistically sophisticated apparel. The campaign featured innovative photography techniques and cutting-edge digital elements to showcase the fusion of technology and style.",
-      video: "/NikeCampaignVideo.mp4",
+      image: "/NikeCampaignCover.jpg",
       year: "2023",
       client: "Nike",
       role: "Campaign Director & Photographer",
