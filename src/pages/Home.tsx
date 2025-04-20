@@ -188,7 +188,7 @@ const Home = () => {
               }}
             >
               <motion.img
-                src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80"
+                src="/EddieCole2025a"
                 alt="Creative Showcase"
                 className="w-full h-full object-cover"
                 initial={{ scale: 1.2 }}
