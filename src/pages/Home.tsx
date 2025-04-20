@@ -191,9 +191,9 @@ const Home = () => {
                 src="/TextMaskCover.avif"
                 alt="Creative Showcase"
                 className="w-full h-full object-cover"
-                initial={{ scale: 1.2 }}
+                initial={{ scale: 1.5 }}
                 whileInView={{ scale: 1 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1.9 }}
               />
             </div>
           </div>
