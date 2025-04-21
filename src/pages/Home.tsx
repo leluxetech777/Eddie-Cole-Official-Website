@@ -38,7 +38,7 @@ const Home = () => {
   const featuredProjects: FeaturedProject[] = [
     {
       title: "The Cole Method",
-      description: "A bold fusion of luxury and streetwear, crafted by yours truly -Eddie Cole",
+      description: "A bold fusion of luxury and streetwear, crafted by yours truly, —Eddie Cole",
       fullDescription: "The Cole Method Collection redefines the essence of luxury streetwear through the visionary lens of Eddie Cole. Merging classic urban aesthetics with high-fashion refinement, this collection introduces a bold new narrative in modern style. Each garment is a testament to individuality, confidence, and intentionality—designed to make a statement without saying a word. With an emphasis on premium craftsmanship, versatile silhouettes, and hand-selected materials, The Cole Method challenges traditional fashion norms while celebrating self-expression. It’s not just a look; it’s a lifestyle—curated by Eddie Cole, for those who lead, not follow.",
       image: "/TheColeMethodCover.jpg",
       year: "2025",
@@ -53,13 +53,13 @@ const Home = () => {
     },
     {
       title: "NIKE CAMPAIGN",
-      description: "Revolutionary campaign bridging athletic performance and high fashion.",
-      fullDescription: "The Nike Campaign represents a revolutionary approach to sports fashion, merging elite athletic performance with high-end fashion sensibilities. This groundbreaking project challenged traditional boundaries between sportswear and luxury fashion, creating a new category of performance-focused yet stylistically sophisticated apparel. The campaign featured innovative photography techniques and cutting-edge digital elements to showcase the fusion of technology and style.",
+      description: "Eddie Cole’s creative tribute to the brand he loves—bringing friends, models, and fellow Nike fans together for a bold, visual celebration of timeless culture.",
+      fullDescription: "The NIKE CAMPAIGN is a vibrant celebration of community, culture, and the iconic spirit of Nike—curated by Eddie Cole. In a heartfelt tribute to his favorite brand, Eddie brought together an eclectic mix of friends, models, creatives, and fellow Nike lovers to create something truly memorable. What unfolded was more than a campaign—it was a movement. Through powerful visuals and authentic moments, the campaign captures the essence of unity, style, and shared passion. From spontaneous street shots to intimate portraits, every frame tells a story of connection, legacy, and the joy of simply showing up in your own Nike way.",
       image: "/NikeCampaignCover.jpg",
-      year: "2023",
+      year: "2024",
       client: "Nike",
-      role: "Campaign Director & Photographer",
-      technologies: ["Motion Capture", "AR Integration", "Performance Fabrics", "Digital Marketing"],
+      role: "Campaign Director, Stylist & Photographer",
+      technologies: ["Love", "Community", "Culture", "Photography", "Expression"],
       gallery: [
         "/EddieColeNikeCampaignCover.jpg",
         "/EddieColeNikeCampaign2.jpeg",
@@ -68,12 +68,12 @@ const Home = () => {
     },
     {
       title: "COLE & FRIENDS",
-      description: "Showcasing avant-garde designs at the pinnacle of fashion.",
-      fullDescription: "Our Paris Fashion Week presentation marked a defining moment in contemporary fashion, showcasing a collection that pushed the boundaries of conventional design while paying homage to classical haute couture. The show featured an innovative runway concept that integrated interactive digital elements with physical fashion pieces, creating an immersive experience that captivated both in-person and virtual audiences worldwide.",
+      description: "Minneapolis-based showcase curated by Eddie Cole, featuring stunning work from photographers and friends—capturing the beauty of collaboration and creativity.",
+      fullDescription: "COLE & FRIENDS is a creative showcase that brought together a community of talented photographers and visual artists under one roof in Minneapolis, curated by Eddie Cole. More than just an exhibition, it was a moment of shared brilliance—where friends became collaborators and each frame told a deeply personal story. From striking portraits to bold experimental visuals, the showcase captured the raw essence of creativity, camaraderie, and artistic freedom. Eddie documented every moment, turning the event itself into an immersive, living gallery. COLE & FRIENDS stands as a tribute to friendship, talent, and the power of collective expression.",
       image: "/ColeAndFriendsCover.jpg",
       year: "2023",
-      client: "Paris Fashion Week",
-      role: "Show Director & Lead Designer",
+      client: "City of Minneapolis",
+      role: "Show Director, Stylist, Photographer & Lead Designer",
       technologies: ["Holographic Displays", "Live Streaming", "Smart Fabrics", "LED Integration"],
       gallery: [
         "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&q=80",
