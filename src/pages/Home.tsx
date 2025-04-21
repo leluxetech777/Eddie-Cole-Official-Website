@@ -74,7 +74,7 @@ const Home = () => {
       year: "2023",
       client: "City of Minneapolis",
       role: "Show Director, Stylist, Photographer & Lead Designer",
-      technologies: ["Holographic Displays", "Live Streaming", "Smart Fabrics", "LED Integration"],
+      technologies: ["Creativity", "Collaboration", "Photography", "Community"],
       gallery: [
         "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1504703395950-b89145a5425b?auto=format&fit=crop&q=80",
