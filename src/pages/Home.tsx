@@ -68,7 +68,7 @@ const Home = () => {
     },
     {
       title: "COLE & FRIENDS",
-      description: "Minneapolis-based showcase curated by Eddie Cole, featuring stunning work from photographers and friends—capturing the beauty of collaboration and creativity.",
+      description: "Minneapolis-based showcase curated by Eddie Cole, featuring... friends",
       fullDescription: "COLE & FRIENDS is a creative showcase that brought together a community of talented photographers and visual artists under one roof in Minneapolis, curated by Eddie Cole. More than just an exhibition, it was a moment of shared brilliance—where friends became collaborators and each frame told a deeply personal story. From striking portraits to bold experimental visuals, the showcase captured the raw essence of creativity, camaraderie, and artistic freedom. Eddie documented every moment, turning the event itself into an immersive, living gallery. COLE & FRIENDS stands as a tribute to friendship, talent, and the power of collective expression.",
       image: "/ColeAndFriendsCover.jpg",
       year: "2023",
