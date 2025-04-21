@@ -53,7 +53,7 @@ const Home = () => {
     },
     {
       title: "NIKE CAMPAIGN",
-      description: "Eddie Cole’s creative tribute to the brand he loves; a visual celebration of timeless culture.",
+      description: "Eddie Cole’s creative tribute to the brand he loves most—NIKE",
       fullDescription: "The NIKE CAMPAIGN is a vibrant celebration of community, culture, and the iconic spirit of Nike—curated by Eddie Cole. In a heartfelt tribute to his favorite brand, Eddie brought together an eclectic mix of friends, models, creatives, and fellow Nike lovers to create something truly memorable. What unfolded was more than a campaign—it was a movement. Through powerful visuals and authentic moments, the campaign captures the essence of unity, style, and shared passion. From spontaneous street shots to intimate portraits, every frame tells a story of connection, legacy, and the joy of simply showing up in your own Nike way.",
       image: "/NikeCampaignCover.jpg",
       year: "2024",
