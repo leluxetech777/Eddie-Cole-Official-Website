@@ -38,15 +38,15 @@ const Home = () => {
   const featuredProjects: FeaturedProject[] = [
     {
       title: "The Cole Method",
-      description: "A fashion style that redefined luxury streetwear, styled by -Yours Truly.",
-      fullDescription: "The Vogue Collection represents a paradigm shift in luxury fashion, seamlessly blending haute couture with street sensibilities. Each piece is meticulously crafted to challenge conventional fashion boundaries while maintaining the highest standards of craftsmanship. The collection features sustainable materials, innovative textile technologies, and bold silhouettes that speak to both traditional luxury consumers and contemporary fashion enthusiasts.",
+      description: "A bold fusion of luxury and streetwear, crafted by yours truly -Eddie Cole",
+      fullDescription: "The Cole Method Collection redefines the essence of luxury streetwear through the visionary lens of Eddie Cole. Merging classic urban aesthetics with high-fashion refinement, this collection introduces a bold new narrative in modern style. Each garment is a testament to individuality, confidence, and intentionality—designed to make a statement without saying a word. With an emphasis on premium craftsmanship, versatile silhouettes, and hand-selected materials, The Cole Method challenges traditional fashion norms while celebrating self-expression. It’s not just a look; it’s a lifestyle—curated by Eddie Cole, for those who lead, not follow.",
       image: "/TheColeMethodCover.jpg",
-      year: "2024",
-      client: "Vogue Magazine",
-      role: "Creative Director & Lead Designer",
-      technologies: ["Sustainable Fabrics", "Digital Printing", "3D Modeling", "Smart Textiles"],
+      year: "2025",
+      client: "The World",
+      role: "Creative Director, Lead Designer, Stylist & Photographer",
+      technologies: ["Luxury", "Street", "Innovation", "Fun"],
       gallery: [
-        "/EddieColeTheColeMethod.jpg",
+        "/TheColeMethod1.jpg",
         "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80"
       ]
