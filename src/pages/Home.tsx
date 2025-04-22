@@ -38,7 +38,7 @@ const Home = () => {
   const featuredProjects: FeaturedProject[] = [
     {
       title: "The Cole Method",
-      description: "A bold fusion of luxury and streetwear, crafted by yours truly, —Eddie Cole",
+      description: "A bold fusion of luxury and streetwear, styled by yours truly, —Eddie Cole",
       fullDescription: "The Cole Method Collection redefines the essence of luxury streetwear through the visionary lens of Eddie Cole. Merging classic urban aesthetics with high-fashion refinement, this collection introduces a bold new narrative in modern style. Each garment is a testament to individuality, confidence, and intentionality—designed to make a statement without saying a word. With an emphasis on premium craftsmanship, versatile silhouettes, and hand-selected materials, The Cole Method challenges traditional fashion norms while celebrating self-expression. It’s not just a look; it’s a lifestyle—curated by Eddie Cole, for those who lead, not follow.",
       image: "/TheColeMethodCover.jpg",
       year: "2025",
